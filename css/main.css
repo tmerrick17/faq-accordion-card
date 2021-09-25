@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-}
-
 /* * Removing default focus outline in browsers to add my own focus styles */
 a:focus {
   outline: none;
@@ -27,8 +23,7 @@ a:focus {
 }
 
 .faq__question,
-.faq__question--bold,
-.faq__answer {
+.faq__question--bold {
   font-size: 1.3rem;
 }
 
@@ -36,12 +31,10 @@ a:focus {
   color: #4a4b5e;
 }
 
-.faq__question--bold {
-  font-weight: 700;
-}
-
 .faq__answer {
   color: #787887;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 /* * Html Styles */
@@ -56,19 +49,36 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#af67e9, #6565e7);
+  background: linear-gradient(#af67e9, rgba(101, 101, 231, 0.95));
 }
 
 .grid-center {
+  margin-top: 10rem;
   display: grid;
   place-items: center;
-  min-height: 90vh;
-  margin-top: 6rem;
+}
+@media screen and (max-width: 375px) {
+  .grid-center {
+    height: auto;
+    margin-top: 14rem;
+  }
+}
+@media screen and (min-width: 375px) {
+  .grid-center {
+    height: auto;
+    margin-top: 16rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid-center {
+    margin-top: 18rem;
+  }
 }
 
 /* * Footer Styles */
 footer {
-  font-size: 0.73rem;
+  padding-top: 4rem;
+  font-size: 1rem;
   text-align: center;
   position: relative;
   margin: auto 0 0.3rem;
@@ -83,7 +93,7 @@ footer p {
   position: relative;
 }
 .footer__link:hover, .footer__link:focus {
-  color: #4a4b5e;
+  color: #e7e7e9;
 }
 .footer__link:hover {
   text-decoration: none;
@@ -109,33 +119,142 @@ footer p {
   flex-direction: column;
   position: relative;
 }
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 90%;
+    height: 51rem;
+    flex-direction: row;
+  }
+}
 
-.card__svg-main {
+/* * Mobile SVG Styles */
+.card__svg-main-mbl {
   transform: translate(1.6rem, -10.7rem);
   position: absolute;
 }
+@media screen and (min-width: 768px) {
+  .card__svg-main-mbl {
+    transform: translate(18.6rem, -10.7rem);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card__svg-main-mbl {
+    display: none;
+  }
+}
 
-.card__svg-shadow {
+.card__svg-shadow-mbl {
   transform: translateX(4.4rem);
   position: absolute;
 }
+@media screen and (min-width: 768px) {
+  .card__svg-shadow-mbl {
+    transform: translateX(21.4rem);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card__svg-shadow-mbl {
+    display: none;
+  }
+}
 
-/* * FAQ Component inside of Card Component */
-.faq {
+/* * Hide Desktop SVG's in Mobile View and Show in Desktop View*/
+.card__svg-main-dskt,
+.card__svg-box-dskt,
+.card__svg-shadow-dskt {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .card__svg-main-dskt,
+.card__svg-box-dskt,
+.card__svg-shadow-dskt {
+    display: block;
+  }
+}
+
+/* * Desktop SVG Styles */
+.card__svg-main-dskt {
+  margin-top: 7.5rem;
+  margin-left: -8rem;
+}
+
+.card__svg-box-dskt {
+  position: absolute;
+  transform: translate(-9rem, -22.5rem);
+  z-index: 2;
+}
+
+.card__svg-shadow-dskt {
+  margin-top: -70rem;
+  margin-left: -57.5rem;
+}
+
+/* * FAQ Component inside of Card Component Styles */
+.faq-accordion {
   width: 85%;
   align-self: center;
   display: flex;
   flex-direction: column;
-  margin: 13.2rem 0 4.8rem;
+  margin: 13.2rem 0 3.2rem;
+}
+@media screen and (min-width: 1024px) {
+  .faq-accordion {
+    padding: 0 9.5rem 9.5rem 7rem;
+  }
 }
 
 .faq__title {
   text-align: center;
   margin-bottom: 3.2rem;
 }
+@media screen and (min-width: 1024px) {
+  .faq__title {
+    text-align: left;
+  }
+}
 
-.faq__arrow {
-  width: 1rem;
+.faq__item {
+  margin-bottom: 1.6rem;
+}
+
+.faq__question {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.6rem;
+}
+.faq__question:hover {
+  color: #f47c57;
+}
+
+.faq__question--bold {
+  font-weight: 400;
+}
+
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.65s;
+  border-bottom: solid 0.1rem #e7e7e9;
+}
+
+/* * Accordion Animation Styles */
+.faq__item:target .faq__question {
+  padding-bottom: 0;
+}
+.faq__item:target .faq__arrow {
+  transform: rotate(0.5turn);
+  transition: transform 0.8s;
+}
+.faq__item:target .faq__answer {
+  max-height: 20rem;
+  margin-top: 1.2rem;
+  padding-bottom: 1.6rem;
+}
+.faq__item:target .faq__question--bold {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -11,30 +11,116 @@
     flex-direction: column
     position: relative
 
-.card__svg-main
+    @media screen and (min-width: 1024px)
+        width: 90%
+        height: 51rem
+        flex-direction: row
+
+/* * Mobile SVG Styles */
+.card__svg-main-mbl
     transform: translate(1.6rem, -10.7rem)
     position: absolute
+    
+    @media screen and (min-width: 768px)
+        transform: translate(18.6rem, -10.7rem)
 
+    @media screen and (min-width: 1024px)
+        display: none
 
-.card__svg-shadow
+.card__svg-shadow-mbl
     transform: translateX(4.4rem)
     position: absolute
 
-/* * FAQ Component inside of Card Component */
-.faq
+    @media screen and (min-width: 768px)
+        transform: translateX(21.4rem)
+
+    @media screen and (min-width: 1024px)
+        display: none
+
+/* * Hide Desktop SVG's in Mobile View and Show in Desktop View*/
+.card__svg-main-dskt,
+.card__svg-box-dskt,
+.card__svg-shadow-dskt
+    display: none
+
+    @media screen and (min-width: 1024px)
+        display: block
+
+/* * Desktop SVG Styles */
+.card__svg-main-dskt
+    margin-top: 7.5rem 
+    margin-left: -8rem 
+
+.card__svg-box-dskt
+    position: absolute
+    transform: translate(-9rem, -22.5rem)
+    z-index: 2
+
+.card__svg-shadow-dskt
+    margin-top: -70rem 
+    margin-left: -57.5rem
+
+/* * FAQ Component inside of Card Component Styles */
+.faq-accordion
     width: 85%
     align-self: center
     display: flex
     flex-direction: column
-    margin: 13.2rem 0 4.8rem
+    margin: 13.2rem 0 3.2rem
+
+    @media screen and (min-width: 1024px)
+        //width: 79%
+        padding: 0 9.5rem 9.5rem 7rem
+        //margin: 6.5rem 0 6.7rem
 
 .faq__title
     text-align: center
     margin-bottom: 3.2rem
 
+    @media screen and (min-width: 1024px)
+        text-align: left
 
+.faq__item
+    margin-bottom: 1.6rem
 
-.faq__arrow
-    width: 1rem
+.faq__question
+    text-decoration: none
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 1.6rem
 
+    &:hover
+        color: abst.$color-red-soft
+
+// Initial font-weight state
+.faq__question--bold
+    font-weight: 400
+
+.faq__answer
+    max-height: 0
+    overflow: hidden
+    position: relative
+    transition: max-height 0.65s
+    border-bottom: solid 0.1rem abst.$color-blue-gray-light
     
+/* * Accordion Animation Styles */
+.faq__item:target
+    .faq__question
+        padding-bottom: 0
+    
+    .faq__arrow
+        transform: rotate(0.5turn)
+        transition: transform 0.8s
+
+    .faq__answer
+        max-height: 20rem
+        margin-top: 1.2rem
+        padding-bottom: 1.6rem
+    
+    .faq__question--bold
+        font-weight: 700
+
+
+
+

@@ -1,7 +1,18 @@
 @use '../1-abstracts' as abst
 
 .grid-center 
+    margin-top: 10rem
     display: grid
     place-items: center
-    min-height: 90vh
-    margin-top: 6rem
+    //min-height: 90vh
+
+    @media screen and (max-width: 375px)
+        height: auto
+        margin-top: 14rem
+
+    @media screen and (min-width: 375px)
+        height: auto
+        margin-top: 16rem
+
+    @media screen and (min-width: 1024px)
+        margin-top: 18rem

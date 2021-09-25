@@ -21,39 +21,78 @@
   <main class="grid-center">
     <!-- * Card Section -->
     <section class="card">
-      <!-- * Card Main Image (svg) -->
-      <div class="card__svg-main">
-        <img src="./images/illustration-woman-online-mobile.svg" alt="Illustration of woman in front of computer">
-      </div>
-      <div class="card__svg-shadow">
-        <img src="./images/bg-pattern-mobile.svg" alt="shadow of main image">
-      </div>
-      <!-- * FAQ Section inside Card -->
-      <div class="faq">
-        <h1 class="faq__title">FAQ</h1>
-
-        <p class="faq__question faq__question--bold">How many team members can I invite?</p>
-        <img class="faq__arrow" src="./images/icon-arrow-down.svg">
-        <p class="faq__answer">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
-        
-        <p class="faq__question faq__question--bold">What is the maximum file upload size?</p>
-        <img class="faq__arrow" src="./images/icon-arrow-down.svg">
-        <p class="faq__answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
-        
-        <p class="faq__question faq__question--bold">How do I reset my password?</p>
-        <img class="faq__arrow" src="./images/icon-arrow-down.svg">
-        <p class="faq__answer">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
-        
-        <p class="faq__question faq__question--bold">Can I cancel my subscription?</p>
-        <img class="faq__arrow" src="./images/icon-arrow-down.svg">
-        <p class="faq__answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
-        
-        <p class="faq__question faq__question--bold">Do you provide additional support?</p>
-        <img class="faq__arrow" src="./images/icon-arrow-down.svg">
-        <p class="faq__answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-       
+      <div class="card__images">
+        <!-- * Mobile Card Main Image and Shadow (svgs) -->
+        <div class="card__svg-main-mbl">
+          <img src="./images/illustration-woman-online-mobile.svg" alt="Illustration of woman in front of computer">
+        </div>
+        <div class="card__svg-shadow-mbl">
+          <img src="./images/bg-pattern-mobile.svg" alt="shadow of main image">
+        </div>
+        <!-- * Desktop Card Main Image, Box and Shadow (svgs) -->
+        <div class="card__svg-main-dskt">
+          <img src="./images/illustration-woman-online-desktop.svg" alt="Illustration of woman in front of computer">
+        </div>
+        <div class="card__svg-box-dskt">
+          <img src="./images/illustration-box-desktop.svg" alt="">
+        </div>
+        <div class="card__svg-shadow-dskt">
+          <img src="./images/bg-pattern-desktop.svg" alt="">
+        </div>
       </div>
       
+      
+      <!-- * FAQ Section inside Card -->
+      <div class="faq-accordion">
+        <!-- * FAQ Title -->
+        <h1 class="faq__title">FAQ</h1>
+
+        <div class="faq__item" id="question1">
+          <a class="faq__question faq__question--bold" href="#question1">How many team members can I invite?
+            <img class="faq__arrow" src="./images/icon-arrow-down.svg">
+          </a>
+          <div class="faq__answer">
+            <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+          </div>
+        </div>
+
+        <div class="faq__item" id="question2">
+            <a class="faq__question faq__question--bold" href="#question2">What is the maximum file upload size?
+              <img class="faq__arrow" src="./images/icon-arrow-down.svg">
+            </a>
+            <div class="faq__answer">
+              <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+            </div>
+        </div>
+
+        <div class="faq__item" id="question3">
+            <a class="faq__question faq__question--bold" href="#question3">How do I reset my password?
+              <img class="faq__arrow" src="./images/icon-arrow-down.svg">
+            </a>
+            <div class="faq__answer">
+              <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+            </div>
+        </div>
+        
+        <div class="faq__item" id="question4">
+            <a class="faq__question faq__question--bold" href="#question4">Can I cancel my subscription?
+              <img class="faq__arrow" src="./images/icon-arrow-down.svg">
+            </a>
+            <div class="faq__answer">
+              <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+            </div>
+        </div>
+
+        <div class="faq__item" id="question5">
+            <a class="faq__question faq__question--bold" href="#question5">Do you provide additional support?
+              <img class="faq__arrow" src="./images/icon-arrow-down.svg">
+            </a>
+            <div class="faq__answer">
+              <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+            </div>
+        </div>
+
+      </div>
     </section>
   </main>
 
