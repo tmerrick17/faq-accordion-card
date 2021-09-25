@@ -14,9 +14,6 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,24 +25,34 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Hide/Show the answer to a question when the question is clicked
 
+Challenge specific to Trevor Merrick
+- Created accordion with just CSS
+
 ### Screenshot
 
 ![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://your-solution-url.com)
+- Live Site URL: [Live site URL](https://tmerrick17.github.io/faq-accordion-card/)
 
 ## My process
+
+With the HTML basic content provided, worked on:
+  - assigning CSS class names using the BEM method
+  - used SASS (7-1 file structure, I only needed to use 4 modular folders in tis project)
+  - creating variables in SASS for color schemes, fonts, font-sizes, etc
+  - adding Google Fonts provided
+  - reset CSS to give all browsers a common starting point
+
+Next worked on:
+  - building mobile first
+  - Figuring out where to use Flex vs Grid (used both)
+  - Worked on media query for smaller-mobile/tablet/desktop
+
+Finally worked on:
+  - Worked on accessibility features for the accordion and footer links
 
 ### Built with
 
@@ -54,57 +61,29 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Using Sass more and more has been great.  I've been really learning how to write as little code possible by using Sass.  It's very gratifying when I can see where I would have had to write more if I wrote in just CSS.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Working on the accordion was fun.  I really showed the power of CSS/Sass alone.  I found a video online where someone created a different accordion and went from there.  It wasn't too hard really.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I had some trouble with getting the svg's to hide at the borders of the card.  As of now I'm seeking help with that from the Frontend Mentor community on Slack.  When you are reading this hopefully it is fixed.  Other then that this was a very rewarding project.
 
 ### Useful resources
 
 - [Julio Codes: Responsive FAQ Accordion](https://www.youtube.com/watch?v=MXrtXg1kpVs&t=52s) - This one helped me create a responsive accordion with just CSS. Great video!
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Kevin Powell](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw) - I watch his videos over and over again for great CSS/Sass tips and tricks.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Trevor Merrick](https://trevormerrick.com)
+- LinkedIn - [@trevormerrick](https://www.linkedin.com/in/trevormerrick/)
+- GitHub - [@tmerrick17](https://github.com/tmerrick17/)
+- Frontend Mentor - [@tmerrick17](https://www.frontendmentor.io/profile/tmerrick17)
+- Twitter - [@tcmerrick](https://www.twitter.com/tcmerrick)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
