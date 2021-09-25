@@ -185,7 +185,7 @@ footer p {
 }
 
 .card__svg-shadow-dskt {
-  margin-top: -70rem;
+  margin-top: -73rem;
   margin-left: -57.5rem;
 }
 
@@ -230,6 +230,12 @@ footer p {
 
 .faq__question--bold {
   font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) {
+  .faq__arrow {
+    margin-right: 1.5rem;
+  }
 }
 
 .faq__answer {
