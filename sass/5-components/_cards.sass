@@ -47,18 +47,21 @@
         display: block
 
 /* * Desktop SVG Styles */
+/* * Giving the illustration images background space on the left half of the card
+.card__images 
+    width: 75.5%
+    height: 100%
+
 .card__svg-main-dskt
-    margin-top: 7.5rem 
-    margin-left: -8rem 
+    background: url('/images/illustration-woman-online-desktop.svg') no-repeat center/cover, url(/images/bg-pattern-desktop.svg) no-repeat center/cover
+    background-size: 115%, 240%
+    background-position: right 2rem bottom 8rem, right 2rem bottom -13rem
+    width: 100%
+    height: 100%
 
 .card__svg-box-dskt
     position: absolute
-    transform: translate(-9rem, -22.5rem)
-    z-index: 2
-
-.card__svg-shadow-dskt
-    margin-top: -73rem 
-    margin-left: -57.5rem
+    transform: translate(-8.8rem, -29.2rem)
 
 /* * FAQ Component inside of Card Component Styles */
 .faq-accordion
@@ -69,7 +72,7 @@
     margin: 13.2rem 0 3.2rem
 
     @media screen and (min-width: 1024px)
-        //width: 79%
+        //width: 67%
         padding: 0 9.5rem 9.5rem 7rem
         //margin: 6.5rem 0 6.7rem
 
@@ -90,7 +93,8 @@
     justify-content: space-between
     padding-bottom: 1.6rem
 
-    &:hover
+    &:hover,
+    &:focus                                                                     
         color: abst.$color-red-soft
 
 // Initial font-weight state
@@ -115,7 +119,7 @@
     
     .faq__arrow
         transform: rotate(0.5turn)
-        transition: transform 0.8s
+        transition: transform 0.65s
 
     .faq__answer
         max-height: 20rem

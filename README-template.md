@@ -70,7 +70,7 @@ Working on the accordion was fun.  I really showed the power of CSS/Sass alone. 
 
 ### Continued development
 
-I had some trouble with getting the svg's to hide at the borders of the card.  As of now I'm seeking help with that from the Frontend Mentor community on Slack.  When you are reading this hopefully it is fixed.  Other then that this was a very rewarding project.
+I need to continue developing my skills in CSS.  It is easy to learn and hard to master.  I think that sums up CSS.  But I love it so that helps.
 
 ### Useful resources
 
