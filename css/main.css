@@ -53,7 +53,6 @@ body {
 }
 
 .grid-center {
-  margin-top: 10rem;
   display: grid;
   place-items: center;
 }
@@ -67,11 +66,6 @@ body {
   .grid-center {
     height: auto;
     margin-top: 16rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .grid-center {
-    margin-top: 18rem;
   }
 }
 

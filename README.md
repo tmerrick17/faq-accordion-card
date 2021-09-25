@@ -34,7 +34,7 @@ Challenge specific to Trevor Merrick
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam/hub/responsive-faq-accordion-using-just-css-HoLwQtfio)
 - Live Site URL: [Live site URL](https://tmerrick17.github.io/faq-accordion-card/)
 
 ## My process
