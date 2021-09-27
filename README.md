@@ -30,7 +30,8 @@ Challenge specific to Trevor Merrick
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./design/screenshot-mobile.jpg)
+![](./design/screenshot-desktop.jpg)
 
 ### Links
 
